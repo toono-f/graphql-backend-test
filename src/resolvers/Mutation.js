@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-const APP_SECRET = require("../utils");
+const { APP_SECRET } = require("../utils");
 
 // ユーザーの新規登録
 async function signup(parent, args, context) {
